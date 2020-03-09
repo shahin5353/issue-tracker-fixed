@@ -56,10 +56,10 @@ const fetchIssues = () => {
   for (var i = 0; i < issues.length; i++) {
     const {id, description, severity, assignedTo, status} = issues[i];
     let statusDesc = `<h3 id="status"> ${description} </h3>`
-    let closeBtn = `<a href="#" onclick="closeIssue(${id})" class="btn btn-warning">Close</a>`
+    let closeBtn = `<a href='javascript:void();' onclick="closeIssue(${id})" class="btn btn-warning">Close</a>`
     if(status === 'Closed'){
       statusDesc = `<h3 id="status"><strike> ${description} </strike></h3>`
-      closeBtn = `<a disabled class="btn btn-warning">Close</a>`
+      closeBtn = `<a href='javascript:void();' disabled class="btn btn-warning">Close</a>`
     }
         issuesList.innerHTML +=   `<div class="well">
                                   <h6>Issue ID: ${id} </h6>
