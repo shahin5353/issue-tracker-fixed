@@ -69,7 +69,7 @@ const fetchIssues = () => {
                                   <p><span class="label label-info"> ${status} </span></p>
                                   ${statusDesc}
                                   <p><span class="glyphicon glyphicon-time"></span> ${severity}</p>
-                                  <p><span class="glyphicon glyphicon-user"></span> ${assignedTo}</p>
+                                  <p style="overflow:hidden"><span class="glyphicon glyphicon-user"></span> ${assignedTo}</p>
                                   ${closeBtn}
                                   <a href='javascript:void();' onclick="deleteIssue(${id})" class="btn btn-danger">Delete</a>
                                   </div>`;                     
