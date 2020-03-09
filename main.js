@@ -52,6 +52,7 @@ const fetchIssues = () => {
   }else{
     document.getElementById('openIssues').innerText = "";
     document.getElementById('allIssues').innerText = "";
+    document.getElementById('closedIssues').innerText = "";
   }
   const issuesList = document.getElementById('issuesList');
   issuesList.innerHTML = '';
